@@ -47,7 +47,7 @@ public class Puzzle
    }
    public boolean makeGuess (String letter) {
        guesses.add(letter.toUpperCase());
-       if (this.getWord().contains(letter)) {
+       if (this.getWord().contains(letter.toUpperCase())) {
            return true;
        } else return false;
    }
